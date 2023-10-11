@@ -13,12 +13,15 @@ a:link {
     text-decoration: none;
 }
 
-.nav-link:not(:hover, :focus) {
-    transition: ease-in-out 0.5s;
-    color: #ffffff !important;
+.landing {
+    color: #FEEF3C !important;
 }
 
-.nav-link {
+.about {
+    color: #FEEF3C !important;
+}
+
+.nav-link:hover{
     color: #FEEF3C !important;
 }
 
@@ -28,24 +31,16 @@ a:link {
     border-radius: 10px;
 }
 
+.star {
+    margin-bottom: 90px !important;
+}
+
 .text-warning {
     color: rgb(254, 239, 60) !important;
 }
 
 .hero-img {
     width: 100%;
-}
-
-.project-text-wrapper ul {
-    list-style-type: none !important;
-}
-
-.project-text-wrapper ul li a {
-   transition: ease-in-out 0.5s;
-}
-
-.project-text-wrapper ul li a:hover {
-    color: #0E0E10 !important;
 }
 
 .img-wrapper img:not(:hover) {
@@ -77,16 +72,16 @@ a:link {
 }
 
 .team-info {
-    height: 400px;
+    height: 420px;
     width: 100%;
     backdrop-filter: blur(10px); 
     background: rgba(255, 255, 255, 0.01); 
     z-index: 1; 
     bottom: -150px;
-    transform: translateY(120px);
+    transform: translateY(140px);
     transition: all ease-in-out 1s;
 }
 
 .team-bg-img:hover .team-info {
-    transform: translate(0px);
+    transform: translate(0);
 }

@@ -20,12 +20,6 @@ const swiper = new Swiper('.swiper', {
         clickable: true,
     },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
     loop: true,
 
     breakpoints: {
