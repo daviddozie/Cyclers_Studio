@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: #0E0E10;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.nav-link:not(:hover, :focus) {
+    transition: ease-in-out 0.5s;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    color: #FEEF3C !important;
+}
+
+.btn-warning {
+    background-color: #FEEF3C !important;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.text-warning {
+    color: rgb(254, 239, 60) !important;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.project-text-wrapper ul {
+    list-style-type: none !important;
+}
+
+.project-text-wrapper ul li a {
+   transition: ease-in-out 0.5s;
+}
+
+.project-text-wrapper ul li a:hover {
+    color: #0E0E10 !important;
+}
+
+.img-wrapper img:not(:hover) {
+    transition: all ease-in-out 0.3s;
+    filter: grayscale(100%);
+}
+
+.img-position {
+    width: 100%;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #FEEF3C;
+    background-color: #0E0E10;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FEEF3C !important;
+}
+
+.team-info {
+    height: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px); 
+    background: rgba(255, 255, 255, 0.01); 
+    z-index: 1; 
+    bottom: -150px;
+    transform: translateY(120px);
+    transition: all ease-in-out 1s;
+}
+
+.team-bg-img:hover .team-info {
+    transform: translate(0px);
+}
