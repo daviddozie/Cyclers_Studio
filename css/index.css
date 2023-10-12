@@ -22,7 +22,7 @@ a:link {
     color: #FEEF3C !important;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #FEEF3C !important;
 }
 
@@ -75,9 +75,9 @@ a:link {
 .team-info {
     height: 420px;
     width: 100%;
-    backdrop-filter: blur(10px); 
-    background: rgba(255, 255, 255, 0.01); 
-    z-index: 1; 
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.01);
+    z-index: 1;
     bottom: -150px;
     transform: translateY(140px);
     transition: all ease-in-out 1s;
