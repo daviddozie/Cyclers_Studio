@@ -60,3 +60,24 @@ const swiper = new Swiper('.swiper', {
         }, false)
     })
 })()
+
+function onSignIn(googleUser) {
+    // Access user information
+    var profile = googleUser.getBasicProfile();
+    console.log("User is signed in as: " + profile.getName());
+
+    // You can perform actions with the user's information here
+}
+
+gapi.load('auth2', function () {
+    gapi.auth2.init({
+        client_id: 'YOUR_CLIENT_ID', // Replace with your OAuth 2.0 Client ID
+    }).then(function () {
+        // Create the sign-in button
+        gapi.signin2.render('google-signin-button', {
+            'scope': 'profile email', // Specify the scopes you need
+            'theme': 'dark', // Choose 'dark' or 'light' for the button theme
+            'onsuccess': onSignIn // Callback function for successful sign-in
+        });
+    });
+});

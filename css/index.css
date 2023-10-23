@@ -118,3 +118,9 @@ a:link {
 .contact-link {
     color: #FEEF3C !important;
 }
+
+.pop {
+    font-size: 15px;
+    color: green;
+    font-weight: 700;
+}

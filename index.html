@@ -30,6 +30,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!--css-->
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -382,6 +383,20 @@
         </section>
         <!----------End team---------------->
     </main>
+    <section>
+        <div class="container">
+            <!-- <div class="text-center">
+                <button id="custom-signup-button" class=" btn btn-warning fw-bold">
+                    Sign Up
+                </button>
+            </div> -->
+            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" data-scope="profile email" data-clientid="YOUR_CLIENT_ID">
+                <button id="custom-signup-button">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </section>
     <footer id="footer" class="py-5 overflow-hidden">
         <div class="container pt-5">
             <div class="row">
