@@ -1,32 +1,10 @@
-function onSignIn(googleUser) {
-    // Access user information
-    var profile = googleUser.getBasicProfile();
-    console.log("User is signed in as: " + profile.getName());
-
-    // You can perform actions with the user's information here
-}
-
-gapi.load('auth2', function () {
-    gapi.auth2.init({
-        client_id: '375302140433-kdhdvt8jfmofhdrb7vub2336br5fmsb6.apps.googleusercontent.com', // Replace with your OAuth 2.0 Client ID
-    }).then(function () {
-        // Create the sign-in button
-        gapi.signin2.render('google-signin-button', {
-            'scope': 'profile email', // Specify the scopes you need
-            'theme': 'dark', // Choose 'dark' or 'light' for the button theme
-            'onsuccess': onSignIn // Callback function for successful sign-in
-        });
-    });
-});
-
-
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    speed: '1000',
+    speed: '2000',
 
     autoplay: {
-        delay: 5000,
+        delay: 3000,
         disableOnInteraction: false,
     },
 
@@ -50,12 +28,12 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 1,
             spaceBetween: 20
         },
-        // when window width is >= 480px
-        480: {
-            slidesPerView: 1,
+        // when window width is >= 900px
+        900: {
+            slidesPerView: 2,
             spaceBetween: 30
         },
-        // when window width is >= 640px
+        // when window width is >= 1200px
         1200: {
             slidesPerView: 3,
             spaceBetween: 20
@@ -83,3 +61,23 @@ const swiper = new Swiper('.swiper', {
     })
 })()
 
+function onSignIn(googleUser) {
+    // Access user information
+    var profile = googleUser.getBasicProfile();
+    console.log("User is signed in as: " + profile.getName());
+
+    // You can perform actions with the user's information here
+}
+
+gapi.load('auth2', function () {
+    gapi.auth2.init({
+        client_id: '375302140433-kdhdvt8jfmofhdrb7vub2336br5fmsb6.apps.googleusercontent.com', // Replace with your OAuth 2.0 Client ID
+    }).then(function () {
+        // Create the sign-in button
+        gapi.signin2.render('google-signin-button', {
+            'scope': 'profile email', // Specify the scopes you need
+            'theme': 'dark', // Choose 'dark' or 'light' for the button theme
+            'onsuccess': onSignIn // Callback function for successful sign-in
+        });
+    });
+});
