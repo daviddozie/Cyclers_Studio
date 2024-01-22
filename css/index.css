@@ -55,6 +55,11 @@ a:link {
     filter: grayscale(100%);
 }
 
+.img-wrapper img {
+    content-visibility: auto;
+    background-color: #eee;
+}
+
 .img-position {
     width: 100%;
 }
